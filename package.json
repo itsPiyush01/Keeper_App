@@ -1,0 +1,29 @@
+{
+  "name": "keeper-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd server/ && node server.js",
+    "server": "cd server/ && nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \" npm run server \" \"npm run client\"  "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsPiyush01/Keeper_App.git"
+  },
+  "author": "Piyush Ranjan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/itsPiyush01/Keeper_App/issues"
+  },
+  "homepage": "https://github.com/itsPiyush01/Keeper_App#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.18"
+  }
+}
